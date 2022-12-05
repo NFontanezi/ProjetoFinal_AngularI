@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  color: #ffffff
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  height: 100vh;
+  padding: 1vw;
+}
+
+.pageContainer {
+  width: 80%;
+  padding: 1vw;
+}
+
+footer {
+  width: 100%
+}

@@ -1,0 +1,37 @@
+.cardExperience {
+  width: 35vw;
+  padding: 0.8vw;
+  background-color: #14213D;
+  /* border: solid 1px #E5E5E5; */
+  color: #E5E5E5;
+  box-shadow: 1px 2px 4px #E5E5E5;
+  margin-right: 5vw
+}
+
+.containerExperience {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+h1, h2 {
+  font-size: 1.6vw;
+  color: #ffffff;
+}
+
+.jobTitle {
+  font-size: 1.2vw;
+  color: #FCA311;
+}
+
+.companyName {
+  font-size: 1.0vw;
+}
+
+.timePeriod {
+  font-size: 0.8vw;
+}
+
+.jobDescription {
+  font-size: 0.8vw;
+}
