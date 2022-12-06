@@ -1,6 +1,7 @@
+import { ExperienceData } from "./experience-data.models";
+
 export interface ExperienceSectionData {
-  job: string;
-  company: string;
-  timePeriod: string;
-  description: string
+  title: string;
+  experience1: ExperienceData;
+  experience2: ExperienceData;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ExperienceSectionData } from 'src/app/models/experience-section-data.models';
 
 @Component({
@@ -8,20 +8,8 @@ import { ExperienceSectionData } from 'src/app/models/experience-section-data.mo
 })
 
 export class ExperienceComponent implements OnInit {
+  @Input() public experienceData!: ExperienceSectionData;
 
-  public firstExperience: ExperienceSectionData = {
-    job: "Trainee Top Coder",
-    company: "Banco Safra",
-    timePeriod: "jun/2022 - atual",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nemo, quibusdam optio a, blanditiis ex amet libero fugiat, consequuntur dolores ut veritatis accusantium necessitatibus cupiditate."
-  }
-
-  public secondExperience: ExperienceSectionData = {
-    job: "Estudante",
-    company: "Ada - Let's Code",
-    timePeriod: "mai/2022 - atual",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nemo, quibusdam optio a, blanditiis ex amet libero fugiat, consequuntur dolores ut veritatis accusantium necessitatibus cupiditate."
-  }
 
   constructor() { }
 

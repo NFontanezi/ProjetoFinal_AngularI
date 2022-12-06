@@ -15,7 +15,7 @@ body{
     max-width: 100px;
     min-height: 1000px;
     background: #fff;
-    margin: 10px;
+    padding: 5px;
     display:grid;
 }
 .container .left-side{
@@ -62,7 +62,7 @@ body{
 }
 .contactInfo{
     padding: 20px;
-    
+
 }
 .tittle{
     color: #fff;
@@ -73,9 +73,9 @@ body{
 .dados{
     padding: 20px;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
     color: #fff;
-    font-weight: 00; 
+    font-weight: 00;
 }
 .dados ul li{
     position: relative;
@@ -85,7 +85,7 @@ body{
 }
 .resposta ul li{
     color: #E5E5E5;
-    font-weight: 1; 
+    font-weight: 1;
     text-align: end;
 }
 .idiomas{
@@ -147,13 +147,13 @@ body{
     0%, 33% { --pgPercentage: 0; }
     100% { --pgPercentage: var(--value); }
   }
-  
+
   @property --pgPercentage {
     syntax: '<number>';
     inherits: false;
     initial-value: 0;
   }
-  
+
   div[role="progressbar"] {
     --size: 2rem;
     --fg: #FCA311;
@@ -165,7 +165,7 @@ body{
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: 
+    background:
       radial-gradient(closest-side, #14213D 80%, transparent 0 99.9%, #14213D 0),
       conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
       ;
@@ -174,10 +174,9 @@ body{
     color: var(--fg);
     margin-top: 5px;
   }
-  
+
   div[role="progressbar"]::before {
     counter-reset: percentage var(--value);
     content: counter(percentage) '%';
-    
+
   }
-  
