@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #E5E5E5;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 100px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 10px;
+    display:grid;
+}
+.container .left-side{
+    position: relative;
+    background: #14213D;
+    padding: 0px;
+}
+.profileHeader{
+    padding: 40px;
+    position:relative;
+    align-items: center;
+    padding-bottom: 10px;
+    background: black;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+.profileHeader .imgBox{
+    position: relative;
+    left:12px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileHeader .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileHeader h2{
+    color:#fff;
+    font-size: 1em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileHeader h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo{
+    padding: 20px;
+    
+}
+.tittle{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.dados{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;   
+    color: #fff;
+    font-weight: 00; 
+}
+.dados ul li{
+    position: relative;
+    list-style: none;
+    margin: 0px 15px 0px 0px;
+    cursor: pointer;
+}
+.resposta ul li{
+    color: #E5E5E5;
+    font-weight: 1; 
+    text-align: end;
+}
+.idiomas{
+    padding: 20px;
+}
+.idiomas ul{
+    display: flex;
+    justify-content: space-between;
+}
+.idiomas ul li{
+    position: relative;
+    list-style: none;
+    margin: 0px 15px 0px 0px;
+    cursor: pointer;
+}
+.idiomas li span{
+    color: #fff;
+    font-weight: 00;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.idiomas ul li .icon{
+    width: 30px;
+    font-size: 18px;
+    color: #FCA311;
+}
+.contactInfo ul li .icon{
+    width: 30px;
+    font-size: 18px;
+    color: #FCA311;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 00;
+}
+.contactInfo.languages .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #fff;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.languages .percent div{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    background: #FCA311;
+}
+
+
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+  }
+  
+  @property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+  }
+  
+  div[role="progressbar"] {
+    --size: 2rem;
+    --fg: #FCA311;
+    --bg: #fff;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, #14213D 80%, transparent 0 99.9%, #14213D 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    margin-top: 5px;
+  }
+  
+  div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+    
+  }
+  
