@@ -1,0 +1,32 @@
+.container {
+  background-color: #14213D;
+  display: grid;
+}
+
+.social-networks {
+  width: 35%;
+}
+
+.network {
+  width: 20%;
+  margin: 2.5%;
+  border-radius: 10px;
+}
+
+.contact-form {
+  width: 48%;
+}
+
+.inputs {
+  background-color: #DDD;
+}
+
+.button {
+  width: 25%;
+  margin: 10px;
+  background-color: #FCA311;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
