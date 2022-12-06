@@ -10,12 +10,12 @@ main {
 aside {
   width: 20%;
   height: auto;
-  padding: 1vw;
+  /* padding: 1vw; */
 }
 
 .pageContainer {
   width: 80%;
-  padding: 1vw;
+  padding: 5px;
 }
 
 footer {

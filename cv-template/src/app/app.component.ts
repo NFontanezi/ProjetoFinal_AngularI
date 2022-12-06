@@ -18,9 +18,9 @@ export class AppComponent {
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nemo, quibusdam optio a, blanditiis ex amet libero fugiat, consequuntur dolores ut veritatis accusantium necessitatibus cupiditate."
       },
       experience2: {
-        job: "Estudante",
+        job: "Estagiário",
         company: "Ada - Let's Code",
-        timePeriod: "mai/2022 - atual",
+        timePeriod: "mar/2022 - jun2022",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nemo, quibusdam optio a, blanditiis ex amet libero fugiat, consequuntur dolores ut veritatis accusantium necessitatibus cupiditate."
       }
     },
@@ -51,8 +51,23 @@ export class AppComponent {
           field2: "City",
           field3: "Age"
         }
-      }    
-      
+      },
+      languages: {
+        title: "Languages",
+        language1: {
+          languageName: "English",
+          languageLevel: 65
+        },
+        language2: {
+          languageName: "Spanish",
+          languageLevel: 50
+        },
+        language3: {
+          languageName: "French",
+          languageLevel: 85
+        }
+      }
+
     }
 
   }
