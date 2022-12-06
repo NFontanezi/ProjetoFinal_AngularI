@@ -38,9 +38,25 @@ export class AppComponent {
         status: "Concluído",
         conclusion: "06/2022"
       }
+    },
+    aside:{
+      dados:{
+        info1:{
+          field1:"Residence",
+          field2: "City",
+          field3: "Age"
+        },
+        info2:{
+          field1:"Residence",
+          field2: "City",
+          field3: "Age"
+        }
+      }    
+      
     }
 
-    }
   }
+
+}
 
 
