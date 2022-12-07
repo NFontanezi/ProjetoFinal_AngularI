@@ -11,6 +11,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { EducationComponent } from './components/education/education.component';
 import { ContactinfoComponent } from './components/contactinfo/contactinfo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactinfoComponent } from './components/contactinfo/contactinfo.compo
     ContactinfoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
