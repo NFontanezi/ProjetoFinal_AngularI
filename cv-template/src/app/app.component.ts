@@ -67,6 +67,13 @@ export class AppComponent {
           languageLevel: 85
         }
       },
+      contactinfo: {
+        telephone:"tel:+5511999999999",
+        email: "mailto:testando@teste.com",
+        website: "http://github.com",
+        linkedin: "http://linkedin.com",
+        pinterest: "http://pinterest.com"
+      },
       coding: {
         title: "Coding",
         lang1: {
@@ -83,7 +90,6 @@ export class AppComponent {
         }
 
       }
-
     }
 
   }

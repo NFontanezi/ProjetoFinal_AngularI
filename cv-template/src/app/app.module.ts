@@ -10,6 +10,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { EducationComponent } from './components/education/education.component';
+import { ContactinfoComponent } from './components/contactinfo/contactinfo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EducationComponent } from './components/education/education.component';
     ExperienceComponent,
     CarouselComponent,
     ContactComponent,
-    EducationComponent
+    EducationComponent,
+    ContactinfoComponent
   ],
   imports: [
     BrowserModule

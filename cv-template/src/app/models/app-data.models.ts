@@ -8,5 +8,4 @@ export interface AppData {
   experiences: ExperienceSectionData;
   educations: EducationSectionData;
   aside: AsideData;
-
 }
