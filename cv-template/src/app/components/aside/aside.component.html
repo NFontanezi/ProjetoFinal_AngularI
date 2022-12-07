@@ -79,21 +79,21 @@
         </div>
 
         <div class="contactInfo languages">
-            <h3 class="tittle">Coding</h3>
+            <h3 class="tittle">{{ asideData.coding.title }}</h3>
             <ul>
                 <li>
-                    <span class="text">HTML</span>
-                    <span class="percent"><div style="width: 90%;"></div></span>
+                    <span class="text">{{ asideData.coding.lang1.langName }}</span>
+                    <span class="percent"><div style="--valor:{{asideData.coding.lang1.langLevel}}"></div></span>
 
                 </li>
                 <li>
-                    <span class="text">CSS</span>
-                    <span class="percent"><div style="width: 50%;"></div></span>
+                    <span class="text">{{ asideData.coding.lang2.langName }}</span>
+                    <span class="percent"><div style="--valor:{{asideData.coding.lang3.langLevel}}"></div></span>
 
                 </li>
                 <li>
-                    <span class="text">Js</span>
-                    <span class="percent"><div style="width: 70%;"></div></span>
+                    <span class="text">{{ asideData.coding.lang3.langName }}</span>
+                    <span class="percent"><div style="--valor:{{asideData.coding.lang3.langLevel}}"></div></span>
 
                 </li>
             </ul>
@@ -103,23 +103,23 @@
             <h3 class="tittle">Contact Info</h3>
             <ul>
                 <li>
-                    <span class="icon"><a href="{{asideData.contactinfo.telephone}}"><i class="fa fa-phone"></i></a></span>
+                    <span class="icon"><a href="{{asideData.contactInfo.telephone}}"><i class="fa fa-phone"></i></a></span>
 
                 </li>
                 <li>
-                    <span class="icon"><a href="{{asideData.contactinfo.email}}"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>
+                    <span class="icon"><a href="{{asideData.contactInfo.email}}"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>
 
                 </li>
                 <li>
-                    <span class="icon"><a href="{{asideData.contactinfo.website}}"><i class="fa fa-globe" aria-hidden="true"></i></a></span>
+                    <span class="icon"><a href="{{asideData.contactInfo.website}}"><i class="fa fa-globe" aria-hidden="true"></i></a></span>
 
                 </li>
                 <li>
-                    <span class="icon"><a href="{{asideData.contactinfo.linkedin}}"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></span>
+                    <span class="icon"><a href="{{asideData.contactInfo.linkedin}}"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></span>
 
                 </li>
                 <li>
-                    <span class="icon"><a href="{{asideData.contactinfo.pinterest}}"><i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
+                    <span class="icon"><a href="{{asideData.contactInfo.pinterest}}"><i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
 
                 </li>
             </ul>
