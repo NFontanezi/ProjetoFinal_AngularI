@@ -52,6 +52,17 @@ export class AppComponent {
           field3: "Age"
         }
       },
+      knowledge:{
+        title: "Knowledge",
+        knowledge1: "Bootstrap",
+        knowledge2: "Materialize",
+        knowledge3: "Stylus",
+        knowledge4: "Sass",
+        knowledge5: "Less",
+        knowledge6: "Gulp",
+        knowledge7: "Webpack",
+        knowledge8: "Grunt"
+      },
       languages: {
         title: "Languages",
         language1: {
