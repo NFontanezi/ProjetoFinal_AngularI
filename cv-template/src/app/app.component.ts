@@ -66,8 +66,14 @@ export class AppComponent {
           languageName: "French",
           languageLevel: 85
         }
+      },
+      contactinfo: {
+        telephone:"tel:+5511999999999",
+        email: "mailto:testando@teste.com",
+        website: "http://github.com",
+        linkedin: "http://linkedin.com",
+        pinterest: "http://pinterest.com"
       }
-
     }
 
   }
