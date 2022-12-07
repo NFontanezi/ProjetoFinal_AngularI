@@ -1,4 +1,11 @@
+.container {
+  height: 3.5em;
+  background-color: #14213D;
+  display: flex;
+  align-items: center;
+}
+
 .copy-rights {
-  font-size: 20px;
-  font: #FCA311;
+  font-size: 18px;
+  color: #FCA311;
 }

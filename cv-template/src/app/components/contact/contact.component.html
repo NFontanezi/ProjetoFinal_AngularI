@@ -1,19 +1,23 @@
 <form class="contact-form">
 
-  <fieldset class="inputs">
-    <input class="name" name="name" type="text" required placeholder="digite seu nome completo">
+  <fieldset class="fieldset-form">
+    <label class="label" for="name">Nome completo: </label>
+    <input class="input" id="name" name="name" type="text" required placeholder="Antônio dos Santos">
   </fieldset>
 
-  <fieldset class="inputs">
-    <input class="motive" name="motive" type="text" required placeholder="digite o motivo do seu contato">
+  <fieldset class="fieldset-form">
+    <label class="label" for="email">Endereço de email: </label>
+    <input class="input" id="email" name="email" type="email" required placeholder="antoniosantos@gmail.com">
   </fieldset>
 
-  <fieldset class="inputs">
-    <input class="email" name="email" type="email" required placeholder="digite seu endereço de email">
+  <fieldset class="fieldset-form">
+    <label class="label" for="motive">Motivo do contato: </label>
+    <input class="input" id="motive" name="motive" type="text" required placeholder="A razão para o contato é...">
   </fieldset>
 
-  <fieldset class="inputs">
-    <textarea class="mensage" name="mesage" cols="60" rows="10" required placeholder="digite sua mensagem"></textarea>
+  <fieldset class="fieldset-form">
+    <label class="label" for="message">Mensagem: </label>
+    <textarea class="input" id="message" name="mesage" cols="30" rows="5" required placeholder="Digite seu texto aqui"></textarea>
   </fieldset>
 
   <input class="button" type="submit" name="button" value="enviar mensagem">
