@@ -133,6 +133,7 @@
 }
 .contactInfo.languages .percent div{
     position:absolute;
+    width: var(--valor);
     top:0;
     left:0;
     height: 100%;

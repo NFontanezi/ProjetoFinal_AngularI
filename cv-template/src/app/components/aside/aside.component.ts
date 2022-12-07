@@ -8,4 +8,5 @@ import { AsideData } from 'src/app/models/aside-models';
 })
 export class AsideComponent {
   @Input() public asideData!:AsideData
+  
 }

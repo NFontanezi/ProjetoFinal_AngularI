@@ -66,6 +66,22 @@ export class AppComponent {
           languageName: "French",
           languageLevel: 85
         }
+      },
+      coding: {
+        title: "Coding",
+        lang1: {
+          langName: "HTML",
+          langLevel: "95%"
+        },
+        lang2: {
+          langName: "CSS",
+          langLevel: "65%"
+        },
+        lang3: {
+          langName: "JS",
+          langLevel: "35%"
+        }
+
       }
 
     }
