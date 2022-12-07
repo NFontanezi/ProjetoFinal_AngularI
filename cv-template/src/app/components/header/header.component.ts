@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HeaderData } from './../../models/header-data.model';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
+  @Input() public headerData!:HeaderData
 }
