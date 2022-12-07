@@ -91,7 +91,7 @@ export class AppComponent {
         linkedin: "http://linkedin.com",
         pinterest: "http://pinterest.com"
       },
-    /* contactinfo2: {
+      /* contactinfo2: {
         telephone:"tel:+5511999999999",
         email: "mailto:testando@teste.com",
         website: "http://github.com",
@@ -112,10 +112,15 @@ export class AppComponent {
           langName: "JS",
           langLevel: "35%"
         }
-
       }
+    },
+    header:{
+      lang1: "C#",
+      lang2: "JavaScript",
+      lang3: "SQL",
+      lang4: "HTML + CSS",
+      lang5: "TypeScript",
     }
-
   }
 
   onContactFormSubmitted(formData: ContactFormData): void {
