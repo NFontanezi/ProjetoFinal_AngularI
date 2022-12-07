@@ -39,7 +39,12 @@ export class AppComponent {
         conclusion: "06/2022"
       }
     },
-    aside:{
+    aside: {
+      profile: {
+        image: '../assets/images/img.jpg',
+        name: 'Steven Universo',
+        function: 'Web Developer'
+      },
       dados:{
         info1:{
           field1:"Residence",
@@ -47,9 +52,9 @@ export class AppComponent {
           field3: "Age"
         },
         info2:{
-          field1:"Residence",
-          field2: "City",
-          field3: "Age"
+          field1:" Lorem ipsum",
+          field2: " Lorem ",
+          field3: " Ipsum"
         }
       },
       languages: {
