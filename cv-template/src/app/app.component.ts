@@ -12,18 +12,18 @@ export class AppComponent {
   public data: AppData = {
     experiences: {
       title: "Job Experiences",
-      experience1: {
-        job: "Trainee Top Coder",
-        company: "Banco Safra",
-        timePeriod: "jun/2022 - atual",
+      experiences: [{
+        job: "Analista",
+        company: "Empresa Exemplo",
+        timePeriod: "jun/2020 - atual",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nemo, quibusdam optio a, blanditiis ex amet libero fugiat, consequuntur dolores ut veritatis accusantium necessitatibus cupiditate."
       },
-      experience2: {
+      {
         job: "Estagiário",
-        company: "Ada - Let's Code",
-        timePeriod: "mar/2022 - jun2022",
+        company: "Empresa Exemplo",
+        timePeriod: "mar/2022 - jun2020",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nemo, quibusdam optio a, blanditiis ex amet libero fugiat, consequuntur dolores ut veritatis accusantium necessitatibus cupiditate."
-      }
+      }]
     },
     educations: {
       title: "Education & Certifications",
