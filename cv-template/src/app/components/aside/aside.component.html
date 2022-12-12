@@ -60,13 +60,11 @@
         <div class="idiomas">
             <h3 class="tittle">{{ asideData.languages.title }}</h3>
             <ul>
-                <li>
-                    <span class="text">{{ asideData.languages.language1.languageName }}</span>
-                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:{{asideData.languages.language1.languageLevel}}"></div>
-
-
+                <li *ngFor="let item of asideData.languages.languages">
+                    <span class="text">{{ item.languageName }}</span>
+                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:{{item.languageLevel}}"></div>
                 </li>
-                <li>
+                <!-- <li>
                     <span class="text">{{ asideData.languages.language2.languageName }}</span>
                     <div role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="--value:{{asideData.languages.language2.languageLevel}}"></div>
 
@@ -75,7 +73,7 @@
                     <span class="text">{{ asideData.languages.language3.languageName }}</span>
                     <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:{{asideData.languages.language3.languageLevel}}"></div>
 
-                </li>
+                </li> -->
             </ul>
         </div>
 

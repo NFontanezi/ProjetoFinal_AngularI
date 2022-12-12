@@ -1,34 +1,17 @@
-
-<div class="container">
+<div class="container" >
   <h1>{{ educationData.title }}</h1>
-  <div class="cardEducation">
+  <div class="cardEducation" *ngFor="let item of educationData.education">
     <div class="courseTitle">
-    <h3> {{ educationData.education1.course }} </h3>
+    <h3> {{ item.course }} </h3>
   </div>
   <div class="courseSchool">
-    <h4> {{ educationData.education1.school }} </h4>
+    <h4> {{ item.school }} </h4>
   </div>
   <div class="courseStatus">
-    <p> Status: {{ educationData.education1.status }} | Conclusão: {{ educationData.education1.conclusion }} </p>
+    <p> Status: {{ item.status }} | Conclusão: {{ item.conclusion }} </p>
   </div>
 </div>
 
-<div class="cardEducation">
-  <div class="courseTitle">
-  <h3> {{ educationData.education2.course }} </h3>
-</div>
-<div class="courseSchool">
-  <h4> {{ educationData.education2.school }} </h4>
-</div>
-<div class="courseStatus">
-  <p> Status: {{ educationData.education2.status }}| Conclusão: {{ educationData.education2.conclusion }} </p>
-</div>
-</div>
-
-
-
-
-<!-- Card 1 -->
 
 
 

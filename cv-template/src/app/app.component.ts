@@ -27,18 +27,18 @@ export class AppComponent {
     },
     educations: {
       title: "Education & Certifications",
-      education1: {
+      education: [{
         course: "Full Stack Web Developer",
         school: "AdATech",
         status: "Em andamento",
         conclusion: "12/2023"
       },
-      education2: {
+      {
         course: "Angular Advanced",
         school: "Loaine training",
         status: "Concluído",
         conclusion: "06/2022"
-      }
+      }]
     },
     aside: {
       profile: {
@@ -71,18 +71,18 @@ export class AppComponent {
       },
       languages: {
         title: "Languages",
-        language1: {
+        languages: [{
           languageName: "English",
           languageLevel: 65
         },
-        language2: {
+        {
           languageName: "Spanish",
           languageLevel: 50
         },
-        language3: {
+        {
           languageName: "French",
           languageLevel: 85
-        }
+        }]
       },
       contactInfo: {
         telephone:"tel:+5511999999999",
