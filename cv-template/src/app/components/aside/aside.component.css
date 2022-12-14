@@ -67,6 +67,11 @@
     font-weight: 300;
     letter-spacing: 1px;
 }
+
+.idiomas a{
+    color: #FCA311;
+}
+
 .dados{
     padding: 20px;
     display: flex;

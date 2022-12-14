@@ -1,20 +1,21 @@
 <header>
   <div class="slider">
-    <div class="slider">
-      <a
-        *ngFor="let item of headerData.lang; let i = index"
-        href="#slide-{{ i + 1 }}"
-        >
-        {{ i + 1 }}
-      </a>
-    </div>
+
     <div class="slides">
       <div
         *ngFor="let item of headerData.lang; let i = index"
         attr.id="slide-{{ i + 1 }}"
       >
-        <p>{{ item }}</p>
+        <p><img src="{{ item }}" alt=""></p>
       </div>
     </div>
+  </div>
+  <div class="slider">
+    <a
+      *ngFor="let item of headerData.lang; let i = index"
+      href="#slide-{{ i + 1 }}"
+      >
+      {{ i + 1 }}
+    </a>
   </div>
 </header>

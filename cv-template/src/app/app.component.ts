@@ -109,13 +109,6 @@ export class AppComponent {
         linkedin: "http://linkedin.com",
         pinterest: "http://pinterest.com"
       },
-      /* contactinfo2: {
-        telephone:"tel:+5511999999999",
-        email: "mailto:testando@teste.com",
-        website: "http://github.com",
-        linkedin: "http://linkedin.com",
-        pinterest: "http://pinterest.com"
-      },*/
       coding: {
         title: "Coding",
         lang1: {
@@ -134,12 +127,13 @@ export class AppComponent {
     },
     header:{
       lang: [
-        "C#",
-        "JavaScript",
-        "SQL",
-        "HTML + CSS",
-        "TypeScript",
-        "Angular"
+        "../assets/images/csharp.png",
+        "../assets/images/sql.png",
+        "../assets/images/html5.png",
+        "../assets/images/css3.png",
+        "../assets/images/js-fill.png",
+        "../assets/images/angular.png",
+        "../assets/images/ts.png"
     ]
     }
   }
