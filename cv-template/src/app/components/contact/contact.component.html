@@ -1,23 +1,23 @@
-<form class="contact-form">
+<form class="contact-form" [formGroup]="form">
 
   <fieldset class="fieldset-form">
     <label class="label" for="name">Nome completo: </label>
-    <input class="input" id="name" name="name" type="text" required placeholder="Antônio dos Santos" [(ngModel)]="formData.name">
+    <input class="input" id="name" name="name" type="text" required placeholder="Antônio dos Santos" formControlName="name">
   </fieldset>
 
   <fieldset class="fieldset-form">
     <label class="label" for="email">Endereço de email: </label>
-    <input class="input" id="email" name="email" type="email" required placeholder="antoniosantos@gmail.com" [(ngModel)]="formData.email">
+    <input class="input" id="email" name="email" type="email" required placeholder="antoniosantos@gmail.com" formControlName="email">
   </fieldset>
 
   <fieldset class="fieldset-form">
     <label class="label" for="motive">Motivo do contato: </label>
-    <input class="input" id="motive" name="motive" type="text" required placeholder="A razão para o contato é..." [(ngModel)]="formData.reason">
+    <input class="input" id="motive" name="motive" type="text" required placeholder="A razão para o contato é..." formControlName="motive">
   </fieldset>
 
   <fieldset class="fieldset-form">
     <label class="label" for="message">Mensagem: </label>
-    <textarea class="input" id="message" name="mesage" cols="30" rows="5" required placeholder="Digite seu texto aqui" [(ngModel)]="formData.message">
+    <textarea class="input" id="message" name="mesage" cols="30" rows="5" required placeholder="Digite seu texto aqui" formControlName="message">
     </textarea>
   </fieldset>
 
