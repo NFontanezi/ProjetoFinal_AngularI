@@ -10,6 +10,24 @@ import { ContactFormData } from './models/contact-form-data.models';
 export class AppComponent {
   title = 'cv-template';
   public data: AppData = {
+    skills: {
+      skill: [{
+        skillValue: "10+",
+        skillName: "Experiência"
+      },
+      {
+        skillValue: "96",
+        skillName: "Projetos Entregues"
+      },
+      {
+        skillValue: "10",
+        skillName: "Tecnologias"
+      },
+      {
+        skillValue: "5,6",
+        skillName: "R$ Mi de Resultado"
+      }]
+    },
     experiences: {
       title: "Job Experiences",
       experiences: [{

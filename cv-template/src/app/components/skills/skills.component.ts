@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { SkillsSectionData } from 'src/app/models/skills-section-data.models';
 
 @Component({
   selector: 'app-skills',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
+  @Input() public skillData!: SkillsSectionData;
 }
