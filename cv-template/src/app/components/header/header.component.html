@@ -1,29 +1,20 @@
 <header>
   <div class="slider">
-
-    <a href="#slide-1">1</a>
-    <a href="#slide-2">2</a>
-    <a href="#slide-3">3</a>
-    <a href="#slide-4">4</a>
-    <a href="#slide-5">5</a>
-
+    <div class="slider">
+      <a
+        *ngFor="let item of headerData.lang; let i = index"
+        href="#slide-{{ i + 1 }}"
+        >
+        {{ i + 1 }}
+      </a>
+    </div>
     <div class="slides">
-      <div id="slide-1">
-        <p>{{headerData.lang1}}</p>
-      </div>
-      <div id="slide-2">
-        <p>{{headerData.lang2}}</p>
-      </div>
-      <div id="slide-3">
-        <p>{{headerData.lang3}}</p>
-      </div>
-      <div id="slide-4">
-        <p>{{headerData.lang4}}</p>
-      </div>
-      <div id="slide-5">
-        <p>{{headerData.lang5}}</p>
+      <div
+        *ngFor="let item of headerData.lang; let i = index"
+        attr.id="slide-{{ i + 1 }}"
+      >
+        <p>{{ item }}</p>
       </div>
     </div>
   </div>
-
 </header>

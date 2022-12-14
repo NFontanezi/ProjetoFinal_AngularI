@@ -133,11 +133,14 @@ export class AppComponent {
       }
     },
     header:{
-      lang1: "C#",
-      lang2: "JavaScript",
-      lang3: "SQL",
-      lang4: "HTML + CSS",
-      lang5: "TypeScript",
+      lang: [
+        "C#",
+        "JavaScript",
+        "SQL",
+        "HTML + CSS",
+        "TypeScript",
+        "Angular"
+    ]
     }
   }
 
