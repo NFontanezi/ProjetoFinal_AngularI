@@ -15,17 +15,7 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
-.slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.slides::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
-.slides::-webkit-scrollbar-track {
-  background: transparent;
-}
+
 .slides > div {
   scroll-snap-align: start;
   flex-shrink: 0;
@@ -43,16 +33,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
 }
 
 img {
   object-fit: cover;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  width: 50%;
-  /* height: 100%; */
+  min-width: 10%;
+  max-width: 40%;
   filter: invert(72%) sepia(45%) saturate(3497%) hue-rotate(352deg) brightness(104%) contrast(98%);
 }
 
@@ -75,25 +61,3 @@ img {
 .slider > a:focus {
   background: #000;
 }
-
-html, body {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom, #74ABE2, #5563DE);
-  font-family: 'Ropa Sans', sans-serif;
-}
-
-
-/* Don't need button navigation */
-/* @supports (scroll-snap-type) {
-  .slider > a {
-    display: none;
-  }
-} */
-
