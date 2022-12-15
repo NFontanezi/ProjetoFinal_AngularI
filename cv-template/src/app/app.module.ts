@@ -7,7 +7,6 @@ import { AsideComponent } from './components/aside/aside.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { EducationComponent } from './components/education/education.component';
 import { ContactinfoComponent } from './components/contactinfo/contactinfo.component';
@@ -21,7 +20,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     SkillsComponent,
     ExperienceComponent,
-    CarouselComponent,
     ContactComponent,
     EducationComponent,
     ContactinfoComponent
