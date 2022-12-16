@@ -64,16 +64,6 @@
                     <span class="text">{{ item.languageName }}</span>
                     <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:{{item.languageLevel}}"></div>
                 </li>
-                <!-- <li>
-                    <span class="text">{{ asideData.languages.language2.languageName }}</span>
-                    <div role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="--value:{{asideData.languages.language2.languageLevel}}"></div>
-
-                </li>
-                <li>
-                    <span class="text">{{ asideData.languages.language3.languageName }}</span>
-                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:{{asideData.languages.language3.languageLevel}}"></div>
-
-                </li> -->
             </ul>
         </div>
 
@@ -81,17 +71,17 @@
             <h3 class="tittle">{{ asideData.coding.title }}</h3>
             <ul>
                 <li>
-                    <span class="text">{{ asideData.coding.lang1.langName }}</span>
+                    <span class="text id-span">{{ asideData.coding.lang1.langName }}</span>
                     <span class="percent"><div style="--valor:{{asideData.coding.lang1.langLevel}}"></div></span>
 
                 </li>
                 <li>
-                    <span class="text">{{ asideData.coding.lang2.langName }}</span>
+                    <span class="text id-span">{{ asideData.coding.lang2.langName }}</span>
                     <span class="percent"><div style="--valor:{{asideData.coding.lang3.langLevel}}"></div></span>
 
                 </li>
                 <li>
-                    <span class="text">{{ asideData.coding.lang3.langName }}</span>
+                    <span class="text id-span">{{ asideData.coding.lang3.langName }}</span>
                     <span class="percent"><div style="--valor:{{asideData.coding.lang3.langLevel}}"></div></span>
 
                 </li>
@@ -99,7 +89,7 @@
         </div>
 
         <div class="idiomas">
-            <h3 class="tittle">Contact Info</h3>
+            <h3 class="tittle">{{asideData.contactInfo.title}}</h3>
             <ul>
                 <li>
                     <span class="icon"><a href="{{asideData.contactInfo.telephone}}"><i class="bi bi-telephone-fill"></i></a></span>

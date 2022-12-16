@@ -1,5 +1,7 @@
-<form class="contact-form" [formGroup]="form">
 
+<h1>Contato</h1>
+
+<form class="contact-form" [formGroup]="form">
   <fieldset class="fieldset-form">
     <label class="label" for="name">Nome completo: </label>
     <input
@@ -40,13 +42,16 @@
   </fieldset>
 
   <fieldset class="fieldset-form">
-    <label class="label" for="motive">Motivo do contato: </label>
-    <input class="input" id="motive" name="motive" type="text" required placeholder="" formControlName="motive"
+    <label class="label" for="motive">Motivo: </label>
+    <select class="form-select" id="motive" name="motive" type="text" required formControlName="motive"
     [ngClass]="{
       'is-invalid':
       isInvalid('motive')
-    }"
-    />
+    }">
+      <option hidden selected>Escolha um motivo para contato:</option>
+      <option
+      *ngFor="let mot of motivesContact">{{mot}}</option>
+    </select>
     <span
     class='invalid-feedback'
     *ngIf="
@@ -58,6 +63,7 @@
   <fieldset class="fieldset-form">
     <label class="label" for="message">Mensagem: </label>
     <textarea class="input" id="message" name="message" cols="30" rows="5" required placeholder="Digite seu texto aqui" formControlName="message"
+    [(ngModel)]="formData.message"
     [ngClass]="{
       'is-invalid':
       isInvalid('message')
@@ -71,7 +77,7 @@
     "
     >Campo Inválido</span>
 
-    <span style="font-size: 10px;"> {{this.form.message.value - message.lenght} caracteres restantes</span>
+    <span style="font-size: 10px;" id="span-restante"> {{msgMaxLength - formData.message.length}} caracteres restantes</span>
 
   </fieldset>
 
@@ -79,7 +85,4 @@
   [disabled]="form.invalid"
   (click)="submitForm()"
   >
-
-
-
 </form>

@@ -29,7 +29,7 @@ export class AppComponent {
       }]
     },
     experiences: {
-      title: "Job Experiences",
+      title: "Experiência Profissional",
       experiences: [{
         job: "Analista",
         company: "Empresa Exemplo",
@@ -44,7 +44,7 @@ export class AppComponent {
       }]
     },
     educations: {
-      title: "Education & Certifications",
+      title: "Educação & Certificados",
       education: [{
         course: "Full Stack Web Developer",
         school: "AdATech",
@@ -61,23 +61,23 @@ export class AppComponent {
     aside: {
       profile: {
         image: '../assets/images/img.jpg',
-        name: 'Steven Universo',
+        name: 'Estevão Universo',
         function: 'Web Developer'
       },
       dados:{
         info1:{
-          field1:"Residence",
-          field2: "City",
-          field3: "Age"
+          field1:"Cidade",
+          field2: "País",
+          field3: "Idade"
         },
         info2:{
-          field1:" Lorem ipsum",
-          field2: " Lorem ",
-          field3: " Ipsum"
+          field1:"São Paulo",
+          field2: "Brasil",
+          field3: "25"
         }
       },
       knowledge:{
-        title: "Knowledge",
+        title: "Habilidades",
         knowledge1: "Bootstrap",
         knowledge2: "Materialize",
         knowledge3: "Stylus",
@@ -88,21 +88,22 @@ export class AppComponent {
         knowledge8: "Grunt"
       },
       languages: {
-        title: "Languages",
+        title: "Idiomas",
         languages: [{
-          languageName: "English",
-          languageLevel: 65
+          languageName: "Port.",
+          languageLevel: 100
         },
         {
-          languageName: "Spanish",
+          languageName: "Francês",
           languageLevel: 50
         },
         {
-          languageName: "French",
+          languageName: "Inglês",
           languageLevel: 85
         }]
       },
       contactInfo: {
+        title:"Contato",
         telephone:"tel:+5511999999999",
         email: "mailto:testando@teste.com",
         website: "http://github.com",
@@ -112,11 +113,11 @@ export class AppComponent {
       coding: {
         title: "Coding",
         lang1: {
-          langName: "HTML",
+          langName: "HTML + CSS",
           langLevel: "95%"
         },
         lang2: {
-          langName: "CSS",
+          langName: "C#",
           langLevel: "65%"
         },
         lang3: {

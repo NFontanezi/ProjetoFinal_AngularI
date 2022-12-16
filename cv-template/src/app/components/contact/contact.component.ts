@@ -13,6 +13,7 @@ export class ContactComponent implements OnInit{
   @Output() public sendForm: EventEmitter<ContactFormData> = new EventEmitter<ContactFormData>();
 
   public form!: FormGroup;
+  public msgMaxLength = 400;
 
   public formData: ContactFormData = {
     name: "",
@@ -20,11 +21,16 @@ export class ContactComponent implements OnInit{
     motive: "",
     message: ""
   };
+  public motivesContact: string[]= [
+    "Dúvida",
+    "Reclamação",
+    "Sugestão",
+    "Elogio"
+  ]
 
   ngOnInit() {
     this.buildForm();
     this.setFormSubscription();
-
   }
 
   private buildForm(): void {
@@ -46,7 +52,7 @@ export class ContactComponent implements OnInit{
       message: new FormControl(null,[
         Validators.required,
         Validators.minLength(20),
-        Validators.maxLength(300)]),
+        Validators.maxLength(this.msgMaxLength)]),
     })
   }
 
@@ -55,8 +61,6 @@ export class ContactComponent implements OnInit{
     console.log(this.formData)
     alert("Formulário enviado com sucesso!")
     this.form.reset()
-
-
   }
 
   private setFormSubscription(): void {
@@ -65,11 +69,9 @@ export class ContactComponent implements OnInit{
       () => {
         console.log(this.form)
       }
-
     )
-
-
   }
+
 
   public isInvalid (item: string) {
    return this.form.controls[item].errors && this.form.controls[item].touched

@@ -59,8 +59,12 @@
 }
 .contactInfo{
     padding: 20px;
-
 }
+
+.id-span span{
+  font-size: 0.8em;
+}
+
 .tittle{
     color: #fff;
     text-transform: uppercase;

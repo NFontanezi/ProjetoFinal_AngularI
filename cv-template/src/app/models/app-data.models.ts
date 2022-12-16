@@ -13,5 +13,4 @@ export interface AppData {
   educations: EducationSectionData;
   aside: AsideData;
   header: HeaderData;
-
 }
