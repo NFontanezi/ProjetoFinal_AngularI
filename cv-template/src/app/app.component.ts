@@ -61,7 +61,7 @@ export class AppComponent {
     aside: {
       profile: {
         image: '../assets/images/img.jpg',
-        name: 'Estevão Universo',
+        name: 'Steven Universo',
         function: 'Web Developer'
       },
       dados:{
